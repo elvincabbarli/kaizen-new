@@ -58,7 +58,7 @@ nav ul li a {
 
 /* first section */
 
-.first-sec{
+.first-sec {
   margin-bottom: 5%;
 }
 
@@ -143,7 +143,7 @@ nav ul li a {
   border-bottom: 1px solid #020202;
 }
 
-.middle-side{
+.middle-side > div {
   border: 1px solid #020202;
 }
 
@@ -336,7 +336,7 @@ nav ul li a {
     font-size: 12px;
   }
 
-  .first-sec{
+  .first-sec {
     margin-bottom: 5%;
     margin-top: 8%;
     display: flex;
@@ -344,90 +344,77 @@ nav ul li a {
     gap: 20px;
   }
 
-  .random-quote b{
+  .random-quote b {
     font-size: 14px;
   }
 
-  .second-sec h2{
+  .second-sec h2 {
     font-size: 18px;
   }
 
-  .smile-block button img{
+  .smile-block button img {
     width: 100%;
   }
 
-  .smile-block{
+  .smile-block {
     gap: 15px;
     padding: 0 15px;
   }
 
-  .left-side{
+  .left-side {
     padding-left: 15px;
     margin-bottom: 8%;
   }
 
-  .right-side{
+  .right-side {
     margin-top: 8%;
     padding-right: 15px;
   }
 }
 
-
 /* BLOG CAT SEC START */
 
-.blog-cats{
-  /* height: 439px; */
-  border: 1px solid #000000;
+.blog-cats {
   margin-top: 12px;
   padding: 10px 0 !important;
-  /* display: flex; */
 }
 
-
-
-.cat-inner{
+.cat-inner {
   display: flex;
   justify-content: space-between;
   padding: 0 10px;
   border-bottom: 1px solid #000000;
-  /* transform: rotate(-90deg);
-  position: absolute; */
-  /* bottom: 0; */
 }
 
-.blog-cat{
+.blog-cat {
   padding: 0 10px;
   display: flex;
   flex-direction: column;
 }
 
-/* .blog-cats .row{
-  position: relative;
-} */
-
-.nav-tabs .nav-link{
+.nav-tabs .nav-link {
   height: 50px;
-  background: #6A6A6A;
+  background: #6a6a6a;
   border-radius: 10px 10px 0px 0px;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
-.blog-cats #myTab{
+.blog-cats #myTab {
   gap: 15px;
   flex-wrap: nowrap !important;
 }
 
-.see-more-mid{
+.see-more-mid {
   width: 101px;
   height: 39px;
-  background: #D7D5D1;
+  background: #d7d5d1;
   border: none;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -436,46 +423,49 @@ nav ul li a {
   color: #020202;
 }
 
-.cat-inner .nav-tabs .nav-link.active{
+.cat-inner .nav-tabs .nav-link.active {
   background-color: #000 !important;
   color: #fff;
   border: none;
 }
 
-.blog-card{
+.blog-card {
   width: 215px;
 }
 
-
-.blog-cat .tab-pane.active{
+.blog-cat .tab-pane.active {
   display: flex;
 }
 
-/* .blog-card > img{
-  width: 206px;
-} */
-
-
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
   .blog-cat {
     flex-direction: row;
+    padding: 0 15px;
   }
 
-  .blog-cats #myTab{
+  .blog-cats #myTab {
     display: flex;
     flex-direction: column;
     gap: 100px;
+    align-items: center;
+    margin-top: 30px;
   }
+
+  .blog-time {
+    display: none;
+  }
+
 
   .cat-inner {
-    width: 100px;
+    width: 75px;
     flex-direction: column;
     gap: 100px;
-    justify-content: flex-start;
+    justify-content: space-around;
     align-items: center;
+    border: 1px solid black;
   }
 
-  .blog-cats{
+  .blog-cats {
     justify-content: space-between;
   }
 
@@ -487,29 +477,70 @@ nav ul li a {
     transform: rotate(-90deg);
   }
 
-  .blog-card .blog-1{
+  .blog-card .blog-1 {
     display: flex;
     flex-direction: row;
   }
 
-  .read-more{
+  .read-more {
     display: none;
   }
 
-  .blog-card .blog-1 > img{
+  .blog-cat .blog-1:nth-child(1){
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .blog-row{
+    margin-left: 0;
+    margin-right: 0;
+
+  }
+
+  #myTabContent{
+    border: 1px solid #000;
+  }
+
+  .blog-cat .blog-1{
+    display: flex;
+    align-items: center;
+  }
+
+
+
+  .blog-cat .blog-1 > img {
     width: 140px;
     height: 90px;
   }
 
-  .blog-cat .tab-pane.active{
+  .blog-cat .tab-pane.active {
     flex-wrap: wrap;
   }
-  
 
+  .blog-date {
+    font-size: 9px;
+    margin-top: 0;
+  }
+
+  .blog-det-2 h2 {
+    font-size: 10px;
+    line-height: 15px;
+  }
+
+  .blog-1 {
+    gap: 9px;
+  }
+
+  .nav-tabs .nav-link{
+    font-size: 16px;
+  }
+
+  .cat-inner .nav-item{
+    width: max-content;
+  }
 }
 
 /* BLOG CAT SEC FINISH */
-
 
 /* PAPER PAGE */
 
@@ -532,12 +563,12 @@ nav ul li a {
 }
 
 .paper-blog2-time span {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  color: #918686; 
+  color: #918686;
 }
 
 .paper-date {
@@ -547,7 +578,7 @@ nav ul li a {
 }
 
 .paper-minute {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 10px;
@@ -561,7 +592,7 @@ nav ul li a {
 }
 
 .paper-blog2-content h4 {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -570,7 +601,7 @@ nav ul li a {
 }
 
 .paper-blog2-content p {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 10px;
@@ -589,7 +620,7 @@ nav ul li a {
   background-color: transparent;
   border: none;
   outline: none;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -601,7 +632,7 @@ nav ul li a {
 }
 
 .paper-blog2-button div span {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 10px;
@@ -621,7 +652,7 @@ nav ul li a {
 
 .paper-blog2-bottom-time span {
   font-size: 10px;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
   line-height: 18px;
@@ -645,13 +676,13 @@ nav ul li a {
 }
 
 .top-line span {
-  padding-left: 0!important;
-  padding-right: 0!important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 .top-line {
-  padding-left: 20px!important;
-  padding-right: 0!important;
+  padding-left: 20px !important;
+  padding-right: 0 !important;
 }
 
 .paper-carousel {
@@ -669,16 +700,16 @@ nav ul li a {
 }
 
 .paper-carousel-content span {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 18px;
-  color: #79756D;
+  color: #79756d;
 }
 
 .paper-carousel-content h2 {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
@@ -687,7 +718,7 @@ nav ul li a {
 }
 
 .paper-carousel-content p {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -706,10 +737,9 @@ nav ul li a {
 
 @media screen and (max-width: 767.5px) {
   .top-line {
-    padding-left: 15px!important;
-    padding-right: 15px!important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
   }
-  
 }
 
 @media screen and (max-width: 450px) {
@@ -718,4 +748,3 @@ nav ul li a {
     gap: 40px;
   }
 }
-
