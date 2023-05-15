@@ -496,12 +496,22 @@
   
   .paper-1-img {
     width: 100%;
+    /* margin-top: 25px; 
+    padding-top: 15px; 
+    border-top: 2px solid #000; */
   }
   
   .paper-k-img {
     margin-top: 20px;
     padding: 20px;
   }
+
+  /* .paper-1,
+  .paper-2 {
+    margin-top: 25px; 
+    padding-top: 15px; 
+    border-top: 2px solid #000;
+  } */
   
   .top-line span {
     padding-left: 0!important;
@@ -565,6 +575,7 @@
 
 
   /* STYLE2 */
+
   .paper-container .owl-nav .owl-next {
     position: absolute;
     top: 0;
@@ -581,16 +592,129 @@
   .owl-carousel-row {
     padding: 30px 0;
     border-bottom: 1px solid #000;
+    margin-top: 20px;
   }
 
-  
+  .owl-carousel-row .owl-dots {
+    display: none;
+  }
+
+  .mobile-paper-2 {
+    display: none;
+  }
+
+  .paper-load-more {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    gap: 7.33px;
+  }
+
+  .paper-load-more button {
+    background: #6A6A6A;
+    padding: 11px 5.5px;
+    border: none;
+    outline: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: -0.01em;
+    color: #FDFDFD;
+}
   
   @media screen and (max-width: 767.5px) {
     .top-line {
       padding-left: 15px!important;
       padding-right: 15px!important;
     }
+
+    .paper-col6 {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      border-bottom: 2px solid #000;
+    }
+
+    .paper-col6-mobile {
+      display: flex;
+    }
     
+    .paper-blog2-bottom,
+    .paper-1 .paper-1-img,
+    .paper-1 .blog-det,
+    .paper-1 .blog-det-2,
+    .paper-1 .blog-det-3 {
+      display: none;
+    }
+
+    .paper-blog2-bottom-left-col {
+      display: none;
+    }
+    
+    .paper-1,
+    .paper-2 {
+      margin: 0;
+      padding: 0;
+      border: none;
+    }
+
+    .paper-blog3-bottom-left {
+      /* border-bottom: 2px solid #000; */
+      padding-bottom: 15px;
+    }
+
+    .owl-carousel-row {
+      margin-top: 0;
+    }
+
+    .paper-1-img {
+      width: 100%;
+      margin-top: 25px; 
+      padding-top: 15px; 
+      border-top: 2px solid #000;
+    }
+
+    .paper-2 {
+      display: none;
+    }
+
+    .paper-k-content-mobile {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .paper-elizabeth-wrapper {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+    }
+
+    .paper-elizabeth-img {
+      width: 210%;
+    }
+
+    /* .paper-1,
+    .paper-2 {
+      margin-top: 25px; 
+      padding-top: 15px; 
+      border-top: 2px solid #000;
+    } */
+
+    .mobile-paper-2 {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .paper-k-img {
+      padding: 0;
+    }
+
+    .paper-k-img img {
+      width: 100%;
+    }
   }
   
   @media screen and (max-width: 450px) {
@@ -600,4 +724,4 @@
     }
   }
   
-  
+  /* STYLE 2 */
