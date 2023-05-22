@@ -1,0 +1,25 @@
+.travel-links {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.travel-links a {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: justify;
+    color: #6D6D6D;
+}
+
+.travel-links p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: justify;
+    color: rgba(0, 0, 0, 1);
+}
