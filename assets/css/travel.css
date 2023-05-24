@@ -4,6 +4,15 @@
     gap: 4px;
 }
 
+.travel-title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 60px;
+    color: #000000;
+}
+
 .travel-links a {
     font-family: 'Poppins';
     font-style: normal;
@@ -22,4 +31,70 @@
     line-height: 21px;
     text-align: justify;
     color: rgba(0, 0, 0, 1);
+}
+
+.travel-paper3-col {
+    border: 1px solid #000000;
+}
+
+.travel-paper3-header {
+    border-bottom: 1px solid #000;
+    padding: 19px 21px;
+}
+
+.travel-paper3-header h2 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+    margin-bottom: 0;
+}
+
+.travel-button-save {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.travel-button-save button {
+    padding: 0 2px;
+    height: 35px;
+    background: #6A6A6A;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: -0.01em;
+    color: #FDFDFD;
+    border: none;
+    outline: none;
+}
+
+.travel-section .blog-date,
+.travel-section .paper-blog2-bottom-time span {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #918686;
+}
+
+
+.travel-section .paper-minute {
+    display: flex;
+    gap: 23px;
+    align-items: center;
+}
+
+@media screen and (max-width: 767.5px) {
+    .paper-1-img {
+        border-top: none;
+        margin-top: 0;
+        padding-top: 0;
+    }
 }
