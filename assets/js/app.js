@@ -1,3 +1,10 @@
+
+const openMenyu = document.getElementById('open-menu')
+openMenyu.addEventListener('click' , () => {
+    let hiddenMenu = document.querySelector('.hidden-menyu')
+    hiddenMenu.classList.add('hidden-active')
+})
+
 $('.owl-carousel').owlCarousel({
     loop:true,
     margin:10,
@@ -17,3 +24,4 @@ $('.owl-carousel').owlCarousel({
         }
     }
 });
+
