@@ -31,6 +31,7 @@ header {
   position: relative;
 }
 
+
 nav ul {
   display: flex;
   gap: 60px;
@@ -202,7 +203,7 @@ nav ul li a {
   width: 11px;
   height: 0px;
   border: 1px solid #918686;
-  transform: rotate(90deg);
+  /* transform: rotate(90deg); */
 }
 
 .action-sec,
@@ -405,7 +406,7 @@ nav ul li a {
 }
 
 .nav-tabs .nav-link {
-  height: 50px;
+  /* height: 50px; */
   background: #6a6a6a;
   border-radius: 10px 10px 0px 0px;
   font-family: "Poppins";
@@ -451,8 +452,14 @@ nav ul li a {
 
 @media screen and (max-width: 768px) {
   .blog-cat {
-    flex-direction: row;
+    /* flex-direction: row; */
     padding: 0 15px;
+    border: none;
+  }
+
+  
+  #myTab{
+    width: 740px;
     border: none;
   }
 
@@ -464,11 +471,12 @@ nav ul li a {
   }
 
   .blog-cats #myTab {
-    display: flex;
-    flex-direction: column;
-    gap: 100px;
-    align-items: center;
+    /* display: flex;/ */
+    /* flex-direction: column; */
+    /* gap: 100px; */
+    /* align-items: center; */
     margin-top: 20px;
+    /* overflow: auto; */
   }
 
   .blog-time {
@@ -476,25 +484,26 @@ nav ul li a {
   }
 
   .cat-inner {
-    width: 56px;
+    overflow: scroll;
+    /* width: 56px; */
     flex-direction: column;
-    gap: 100px;
+    /* gap: 100px; */
     justify-content: space-around;
-    align-items: center;
-    border: 1px solid black;
+    /* align-items: center; */
+    /* border: 1px solid black; */
   }
 
   .blog-cats {
     justify-content: space-between;
   }
 
-  .blog-cats #myTab li {
+  /* .blog-cats #myTab li {
     transform: rotate(-90deg);
   }
 
   .see-more-mid {
     transform: rotate(-90deg);
-  }
+  } */
 
   .blog-card .blog-1 {
     display: flex;
@@ -511,6 +520,7 @@ nav ul li a {
   }
 
   .blog-row {
+    display: block;
     margin-left: 0;
     margin-right: 0;
   }
@@ -531,7 +541,6 @@ nav ul li a {
   }
 
   .blog-cat .tab-pane.active {
-    flex-wrap: wrap;
     flex-wrap: wrap;
     gap: 35px;
     margin-top: 2.5%;
@@ -570,12 +579,12 @@ nav ul li a {
     font-size: 16px;
   }
 
-  .cat-inner .nav-item {
+  /* .cat-inner .nav-item {
     width: max-content;
-  }
+  } */
 
   .foot-left img{
-    width: 100%;
+    width: 90%;
   }
 }
 
@@ -1028,6 +1037,10 @@ footer{
     padding-right: 15px!important;
   }
 
+  .foot-social{
+    justify-content: center;
+  }
+
   .paper-col6 {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -1118,6 +1131,10 @@ footer{
   .paper-blog2-bottom {
     flex-direction: column;
     gap: 40px;
+  }
+
+  #myTab{
+    width: 640px;
   }
 }
 
