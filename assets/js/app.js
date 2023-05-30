@@ -5,6 +5,12 @@ openMenyu.addEventListener('click' , () => {
     hiddenMenu.classList.add('hidden-active')
 })
 
+const closeMenyu = document.querySelector('.close-hidden')
+closeMenyu.addEventListener('click' , () => {
+    let hiddenMenu = document.querySelector('.hidden-menyu')
+    hiddenMenu.classList.remove('hidden-active')
+})
+
 $('.owl-carousel').owlCarousel({
     loop:true,
     margin:10,

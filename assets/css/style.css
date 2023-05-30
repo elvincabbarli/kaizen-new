@@ -41,7 +41,7 @@ header {
 .hidden-menyu {
   max-width: 940px;
   width: 101%;
-  padding: 40px 0;
+  padding: 45px 0;
   background: rgba(2, 2, 2, 0.9);
   border-radius: 0px 0px 10px 10px;
   position: fixed;
@@ -50,10 +50,25 @@ header {
   left: 50%;
   transform: translate(-50%, -101%);
   transition: all .5s ease-in-out;
+
+}
+
+.hidden-menyu-container{
   display: flex;
   align-items: center;
   justify-content: center;
+}
 
+.close-hidden{
+  position: absolute;
+  top: 9px;
+  right: 20px;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 1px 8px;
+  border-radius: 10px;
 }
 
 .hidden-active{
