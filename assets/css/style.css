@@ -41,7 +41,7 @@ header {
 .hidden-menyu {
   max-width: 940px;
   width: 101%;
-  height: 102px;
+  height: 104px;
   background: rgba(2, 2, 2, 0.9);
   border-radius: 0px 0px 10px 10px;
   position: fixed;
@@ -364,10 +364,11 @@ nav ul li a {
 @media screen and (max-width: 800px) {
   nav {
     position: absolute;
-    bottom: -46px;
+    bottom: -38px;
     left: 50%;
     transform: translate(-50%, 0);
     width: 100%;
+    background-color: #d3d3d3;
   }
 
   nav ul {
@@ -1170,6 +1171,14 @@ footer {
 
   #myTab {
     width: 640px;
+  }
+
+  nav ul {
+    gap: 10px;
+  }
+
+  nav ul li a {
+    font-size: 10px;
   }
 }
 
