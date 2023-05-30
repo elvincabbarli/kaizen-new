@@ -41,21 +41,46 @@ header {
 .hidden-menyu {
   max-width: 940px;
   width: 101%;
-  height: 104px;
+  padding: 40px 0;
   background: rgba(2, 2, 2, 0.9);
   border-radius: 0px 0px 10px 10px;
   position: fixed;
   top: 0;
   z-index: 6;
   left: 50%;
-  transform: translate(-50%, -100%);
+  transform: translate(-50%, -101%);
   transition: all .5s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 
 .hidden-active{
   transform: translate(-50%, 0) !important;
   transition: all .5s ease-in-out;
+}
 
+.hidden-menyu ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 0;
+}
+
+.hidden-menyu ul a{
+  color: #fff;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.hidden-menyu ul a:hover{
+  text-decoration: none;
 }
 
 nav ul {
@@ -364,11 +389,10 @@ nav ul li a {
 @media screen and (max-width: 800px) {
   nav {
     position: absolute;
-    bottom: -38px;
+    bottom: -46px;
     left: 50%;
     transform: translate(-50%, 0);
     width: 100%;
-    background-color: #d3d3d3;
   }
 
   nav ul {
@@ -1171,14 +1195,6 @@ footer {
 
   #myTab {
     width: 640px;
-  }
-
-  nav ul {
-    gap: 10px;
-  }
-
-  nav ul li a {
-    font-size: 10px;
   }
 }
 
