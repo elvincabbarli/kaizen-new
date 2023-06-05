@@ -328,7 +328,7 @@ nav ul li a {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  font-size: 10px;
+  font-size: 12px;
   line-height: 15px;
   text-align: justify;
   letter-spacing: -0.03em;
@@ -589,9 +589,9 @@ nav ul li a {
     flex-direction: row;
   }
 
-  .read-more {
+  /* .read-more {
     display: none;
-  }
+  } */
 
   .blog-cat .blog-1:nth-child(1) {
     margin-top: 0;
@@ -626,7 +626,7 @@ nav ul li a {
   }
 
   .blog-date {
-    font-size: 9px;
+    font-size: px;
     margin-top: 0;
   }
 
@@ -643,6 +643,10 @@ nav ul li a {
   .blog-cat .blog-det-2 p {
     text-align: left;
     line-height: 10px;
+  }
+
+  .blog-det-2 p{
+    font-size: 14px;
   }
 
   .blog-cat .blog-det-2 h2 {
