@@ -131,7 +131,7 @@ nav ul li a {
   background: #D9D9D9;
   border-radius: 0px 0px 5px 5px;
   transition: all .3s ease-in-out;
-  opacity: 0;
+  display: none;
 }
 
 .search-bar form input{
@@ -148,7 +148,7 @@ nav ul li a {
 
 .open-searchbar{
   transition: all .3s ease-in-out;
-  opacity: 1;
+  display: block;
   z-index: 5;
   position: relative;
 }
@@ -1071,6 +1071,10 @@ footer {
 }
 
 /* STYLE2 */
+
+.paper-container{
+  margin-top: 2%;
+}
 
 .paper-container .owl-nav .owl-next {
   position: absolute;
