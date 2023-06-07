@@ -10,6 +10,13 @@ closeMenyu.addEventListener("click", () => {
   hiddenMenu.classList.remove("hidden-active");
 });
 
+
+const openSearch = document.getElementById('open-search')
+openSearch.addEventListener('click' , () => {
+  let hiddenSearch = document.querySelector('.search-bar')
+  hiddenSearch.classList.toggle('open-searchbar')
+})
+
 $(".owl-carousel").owlCarousel({
   loop: true,
   margin: 10,
