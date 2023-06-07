@@ -86,11 +86,11 @@
             </ul>
         </div>
 
-        <div class="container">
+        <div class="container settings-container">
             <div class="row settings-row">
                 <div class="col-md-8 settings-ver-wrap">
                     <div class="row">
-                        <div class="col-md-6 px-0">
+                        <div class="col-md-6 px-0 settings-verification-col">
                             <div class="settings-verification">
                                 <h3>Verifikasiya</h3>
                                 <span>
@@ -102,7 +102,7 @@
                                 <img class="img-fluid w-100" src="./assets/img/settings.png" alt="settings" />
                             </div>
                         </div>
-                        <div class="col-md-6 px-0">
+                        <div class="col-md-6 px-0 settings-notification-col">
                             <div class="verification-image">
                                 <img class="img-fluid w-100" src="./assets/img/settings.png" alt="settings" />
                             </div>
@@ -146,23 +146,23 @@
                         <h3>E-MAİLİ DƏYİŞDİRİN</h3>
                         <span>Verifikasiya edilmiş hesab ilə e-poçtanızı dəyişə bilərsiniz</span>
                         <form>
-                            <input type="email" />
+                            <input placeholder="E-poçt daxil edin!" type="email" />
                             <button>Dəyiş</button>
                         </form>
                     </div>
                     <div class="settings-change-password">
                         <h3>ŞİFRƏNİZİ DƏYİŞDİRİN</h3>
                         <span>Verifikasiya edilmiş hesab ilə e-poçtanızı dəyişə bilərsiniz</span>
-                        <form action="">
-                            <div class="">
+                        <form>
+                            <div class="change-pass-div">
                                 <label for="current_pass">Hazırki şifrə</label>
                                 <input type="password" id="current_pass" placeholder="Parolu daxil edin" />
                             </div>
-                            <div class="">
+                            <div class="change-pass-div">
                                 <label for="new_pass">Yeni şifrə</label>
                                 <input type="password" id="new_pass" placeholder="Parolu daxil edin" />
                             </div>
-                            <div class="">
+                            <div class="change-pass-div">
                                 <label for="again_pass">Yenidən daxil edin</label>
                                 <input type="password" id="again_pass" placeholder="Parolu daxil edin" />
                             </div>
@@ -173,15 +173,15 @@
                         <h3>ŞİFRƏNİZİ UNUTMUSUNUZ?</h3>
                         <span>Verifikasiya edilmiş hesab ilə e-poçtanızı dəyişə bilərsiniz</span>
                         <form action="">
-                            <div class="">
+                            <div class="forget-password-div">
                                 <label for="current_pass">Hazırki şifrə</label>
                                 <input type="password" id="current_pass" placeholder="Parolu daxil edin" />
                             </div>
-                            <div class="">
+                            <div class="forget-password-div">
                                 <label for="new_pass">Yeni şifrə</label>
                                 <input type="password" id="new_pass" placeholder="Parolu daxil edin" />
                             </div>
-                            <div class="">
+                            <div class="forget-password-div">
                                 <label for="again_pass">Yenidən daxil edin</label>
                                 <input type="password" id="again_pass" placeholder="Parolu daxil edin" />
                             </div>
@@ -189,8 +189,8 @@
                         </form>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div>
+                <div class="col-md-6 px-0">
+                    <div class="settings-footer-verification">
                         <h3>Verifikasiya</h3>
                         <span>Verifikasiya edilmiş hesab ilə bilgilərinizi yükləyə bilərsiniz</span>
                         <button>Yüklə</button>
@@ -199,7 +199,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 d-flex align-items-center justify-content-center delete-account-col">
                     <div class="delete-account">
                         <h3>HESABI SİLİN</h3>
                         <span>Nəyə görə bizdən ayrılırsınız?</span>
