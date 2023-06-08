@@ -16,4 +16,3 @@ openSearch.addEventListener('click' , () => {
   let hiddenSearch = document.querySelector('.search-bar')
   hiddenSearch.classList.toggle('open-searchbar')
 })
-
