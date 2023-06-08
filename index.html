@@ -18,7 +18,12 @@
     <div class="hidden-menyu">
         <div class="hidden-menyu-container">
             <ul>
-                <a href="profile.html">
+                <!-- <a href="profile.html">
+                   <img src="./assets/img/left-nav.png" alt="">
+                   <span>Profil</span>
+                   <img src="./assets/img/right-nav.png" alt="">
+                </a> -->
+                <a type="button" style="color: #fff;" data-toggle="modal" data-target="#exampleModal">
                    <img src="./assets/img/left-nav.png" alt="">
                    <span>Profil</span>
                    <img src="./assets/img/right-nav.png" alt="">
@@ -934,6 +939,38 @@
                 </form>
             </div>
         </footer>
+
+
+        <!-- MODAL -->
+        <div class="modal login-modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog login-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <form class="login-form">
+                    <h4>Login to your account</h4>
+                    <div class="input-group login-form-div">
+                        <label for="email">Email</label>
+                        <input type="email" placeholder="Enter your email" class="form-control" type="text" id="email" />
+                    </div>
+                    <div class="input-group login-form-div login-div-password mt-4">
+                        <label for="password">Password</label>
+                        <a class="login-forgot" href="">Forgot ?</a>
+                        <input type="password" placeholder="Enter your password" class="form-control" type="text" id="password" />
+                        <img src="./assets/img/profile/eye.png" alt="eye" />
+                    </div>
+                    <button class="mt-4">Login now</button>
+                    <div class="login-dont-account">
+                        Don't have an account ?
+                        <a href="#">Sign up</a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
     <script src="./assets/js/app.js"></script>
     <!-- jQuery library -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
