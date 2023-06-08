@@ -154,7 +154,7 @@ nav ul li a {
 
 .open-searchbar{
   transition: all .3s ease-in-out;
-  opacity: 1;
+  display: block;
   z-index: 5;
   position: relative;
   display: flex;
@@ -1078,6 +1078,10 @@ footer {
 }
 
 /* STYLE2 */
+
+.paper-container{
+  margin-top: 2%;
+}
 
 .paper-container .owl-nav .owl-next {
   position: absolute;
