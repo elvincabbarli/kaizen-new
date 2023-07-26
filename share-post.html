@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share Post</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/share.css" />
+</head>
+<body>
+
+    <section class="travel-section">
+        <div class="hidden-menyu">
+            <div class="hidden-menyu-container">
+                <ul>
+                    <a href="profile.html">
+                       <img src="./assets/img/left-nav.png" alt="">
+                       <span>Profil</span>
+                       <img src="./assets/img/right-nav.png" alt="">
+                    </a>
+        
+                    <a href="settings.html">
+                        <img src="./assets/img/left-nav.png" alt="">
+                        <span>Ayarlar</span>
+                        <img src="./assets/img/right-nav.png" alt="">
+                     </a>
+        
+                     <a href="users.html">
+                        <img src="./assets/img/left-nav.png" alt="">
+                        <span>İstifadəçilər</span>
+                        <img src="./assets/img/right-nav.png" alt="">
+                     </a>
+        
+                     <a href="#">
+                        <img src="./assets/img/left-nav.png" alt="">
+                        <span>Bir məqalə paylaş</span>
+                        <img src="./assets/img/right-nav.png" alt="">
+                     </a>
+        
+                     <a href="#">
+                        <img src="./assets/img/left-nav.png" alt="">
+                        <span>E-poçt bildirişləri aç</span>
+                        <img src="./assets/img/right-nav.png" alt="">
+                     </a>
+        
+                     <a href="#">
+                        <img src="./assets/img/left-nav.png" alt="">
+                        <span>Çıxış</span>
+                        <img src="./assets/img/right-nav.png" alt="">
+                     </a>
+                </ul>
+                <button class="close-hidden">X</button>
+            </div>
+        </div>
+        <div class="all-header">
+            <header class="container">
+                <a href="index.html">
+                    <img src="./assets/img/logo.png" alt="">
+                </a>
+                <nav class="stroke">
+                    <ul>
+                        <li>
+                            <a href="#">Fərdi İnkişaf</a>
+                        </li>
+                        <li>
+                            <a href="travel.html">Səyahət</a>
+                        </li>
+                        <li>
+                            <a href="paper.html">Hekayələr</a>
+                        </li>
+                        <li>
+                            <a href="#">Filmlər</a>
+                        </li>
+                        <li>
+                            <a href="#">Biznes Dünyası</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="search-menu">
+                    <button id="open-search">
+                        <img src="./assets/img/search.png" alt="">
+                    </button>
+                    <button id="open-menu">
+                        <img src="./assets/img/menu.png" alt="">
+                    </button>
+                </div>
+            </header>
+            <div class="line-1"></div>
+            <div class="line-2"></div>
+    
+            <div class="search-bar">
+               <form action="">
+                <input type="text" placeholder="Post, haştag axtar....">
+               </form>
+            </div>
+        </div>
+
+        <section class="mt-2 post-share">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h3>MƏQALƏ PAYLAŞIN</h3>
+                    </div>
+                    <div class="col-12 mt-2 row">
+                        <div class="col-md-6">
+                           <!-- actual upload which is hidden -->
+                            <input type="file" id="actual-btn" hidden/>
+                            <!-- our custom upload button -->
+                            <label for="actual-btn" class="file-label">Kiçik başlıq şəkli</label>
+                        </div>
+                        <div class="col-md-6">
+                           <!-- name of file chosen -->
+                           <span id="file-chosen">Şəkil seçilməyib*</span>
+                        </div>
+                    </div>
+                    <div class="col-12 mt-2 row">
+                        <div class="col-md-12">
+                            <label for="actual-btn" class="text-area">Məzmun</label>
+                        </div>
+                        <div class="col-md-12">
+                           <textarea name="" id="" class="text-editor" ></textarea>
+                        </div>
+                    </div>
+
+                    <div class="col-12 mt-2 row">
+                        <div class="col-md-4">
+                            <input
+                            type="checkbox"
+                            class="dropdown__switch"
+                            id="filter-switch"
+                            hidden
+                          />
+                          <label for="filter-switch" class="dropdown__options-filter">
+                            <ul class="dropdown__filter" role="listbox" tabindex="-1">
+                              <li class="dropdown__filter-selected" aria-selected="true">
+                                Kateqoriya seç
+                              </li>
+                              <li>
+                                <ul class="dropdown__select">
+                                  <li class="dropdown__select-option" role="option">Option 1</li>
+                                  <li class="dropdown__select-option" role="option">Option 2</li>
+                                  <li class="dropdown__select-option" role="option">Option 3</li>
+                                  <li class="dropdown__select-option" role="option">Option 4</li>
+                                  <li class="dropdown__select-option" role="option">Option 5</li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </label>
+                        </div>
+                        <div class="col-md-8">
+                            <input
+                            type="checkbox"
+                            class="dropdown__switch2"
+                            id="filter-switch2"
+                            hidden
+                          />
+                          <label for="filter-switch2" class="dropdown__options-filter2">
+                            <ul class="dropdown__filter2" role="listbox" tabindex="-2">
+                              <li class="dropdown__filter-selected2" aria-selected="true">
+                                Haştaglar seçin
+                              </li>
+                              <li>
+                                <ul class="dropdown__select2">
+                                  <li class="dropdown__select-option2" role="option">Option 1</li>
+                                  <li class="dropdown__select-option2" role="option">Option 2</li>
+                                  <li class="dropdown__select-option2" role="option">Option 3</li>
+                                  <li class="dropdown__select-option2" role="option">Option 4</li>
+                                  <li class="dropdown__select-option2" role="option">Option 5</li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <section class="announce mt-3">
+            <div class="container announce-container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="ann-left">
+                            <p>İş axtarmağınıza ehtiyac qalmadı
+                                İşi ayağınıza gətirdik</p>
+                            <a href="">
+                                <img src="./assets/img/lupa.png" alt="">
+                                EMPLOYMENT.AZ
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="ann-mid">
+                            <img src="./assets/img/elan.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        
+                        <div class="ann-right">
+                            <p>Bütün aktiv iş elanları saytlarını sizin üçün birləşdirdik!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="foot-left">
+                <img src="./assets/img/f-logo.png" alt="">
+                <p>Uğur, inkişaf və nailiyyətə gedən yolda fəaliyyət göstərən
+                    Fərdi İnkişaf platforması kaizen.az</p>
+                <div class="foot-social">
+                    <a target="_blank" href="">
+                        <img src="./assets/img/fb.png" alt="">
+                    </a>
+                    <a target="_blank" href="">
+                        <img src="./assets/img/tw.png" alt="">
+                    </a>
+                    <a target="_blank" href="">
+                        <img src="./assets/img/in.png" alt="">
+                    </a>
+                    <a target="_blank" href="">
+                        <img src="./assets/img/lin.png" alt="">
+                    </a>
+                    <a target="_blank" href="">
+                        <img src="./assets/img/tg.png" alt="">
+                    </a>
+                    <a target="_blank" href="">
+                        <img src="./assets/img/tk.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="foot-right">
+                <div>
+                        <li>
+                            <a href="#">Fərdi İnkişaf</a>
+                        </li>
+                        <li>
+                            <a href="#">Səyahət</a>
+                        </li>
+                        <li>
+                            <a href="#">Hekayələr</a>
+                        </li>
+                        <li>
+                            <a href="#">Filmlər</a>
+                        </li>
+                        <li>
+                            <a href="#">Biznes Dünyası</a>
+                        </li>
+                </div>
+                <form action="">
+                    <p>Təklif və iradlar</p>
+                    <input placeholder="Ad:" type="text"> &nbsp;&nbsp;
+                    <input placeholder="E-mail:*" type="email"> <br>
+                    <textarea name="" id="" cols="" rows=""></textarea> <br>
+                    <button type="submit">Mesajı göndərin</button>
+                </form>
+            </div>
+        </footer>
+    </section>
+    <script src="./assets/js/app.js"></script>
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./assets/js/users.js"></script>
+</body>
+</html>
